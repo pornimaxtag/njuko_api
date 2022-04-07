@@ -1,0 +1,101 @@
+{
+  "namespace": "njuko.widget.registration-status",
+  "name": [
+    {
+      "language": "fr",
+      "translation": "Widget : status de dossier",
+      "locale": "fr_FR"
+    }
+  ],
+  "description": [
+    {
+      "language": "fr",
+      "translation": "Affiche le status du dossier d'un participant",
+      "locale": "fr_FR"
+    }
+  ],
+  "currency" : [
+    "EUR"
+  ],
+  "version": {
+    "versionNumber": "1.0.0",
+    "status" : "READY-FOR-SALE",
+    "repoUrl": "git@gitlab.njuko.com:njuko-v2/modules/njuko.widget.registration-status.git",
+    "frontModuleName" : "AppModuleFront",
+    "hooks": [
+      {
+        "hookName": "registrations.widget.registration-status",
+        "componentName": "DisplayBack"
+      },
+      {
+        "hookName": "registrations.dashboard.widget.registration-status.front",
+        "componentName": "DisplayFront"
+      },
+      {
+        "hookName": "registrations.dashboard.widget.registration-statut.edit",
+        "componentName": "Edit"
+      }
+    ],
+    "widgets": [
+      {
+        "name": [
+          {
+            "language": "fr",
+            "locale": "fr_FR",
+            "translation": "Statut de dossier"
+          },
+          {
+            "language": "en",
+            "locale": "en_GB",
+            "translation": "Registration status"
+          }
+        ],
+        "widgetType": "custom",
+        "customType": "registration-status",
+        "cols": 2.0,
+        "rows": 2.0,
+        "fuseWidget": true
+      }
+    ]
+  },
+  "categories": [
+    "generic",
+    "registration"
+  ],
+
+  "defaultPrice" : [
+    {
+      "registration" : 0.0,
+      "installation" : 5.0,
+      "transaction" : {
+        "fixed" : 0.0,
+        "min" : 0.0,
+        "percent" : 0.0
+      },
+      "currency" : "EUR"
+    }
+  ],
+  "installContext": "EDITION",
+  "images": [
+    {
+      "type": "icon",
+      "path": [
+        {
+          "language": "fr",
+          "translation": "data:image/png;base64,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",
+          "locale": "fr_FR"
+        }
+      ]
+    },
+    {
+      "type": "principal",
+      "path": [
+        {
+          "language": "fr",
+          "translation": "https://njuko-v2-image-store.s3-eu-west-1.amazonaws.com/registration-status.png",
+          "locale": "fr_FR"
+        }
+      ]
+    }
+  ]
+}
